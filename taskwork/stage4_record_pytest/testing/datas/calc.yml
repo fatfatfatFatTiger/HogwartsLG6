@@ -1,0 +1,89 @@
+add:
+  datas:
+    # 整型 + 整型，结果正确
+    - - 1
+      - 1
+      - 2
+    # 整型 + 整型，结果错误
+    - [ 3, 4, 8 ]
+    # 长整型 + 长整型，结果正确
+    - [ 333333333, 444444444, 777777777 ]
+    # 长整型 + 长整型，结果错误
+    - [ 1000000, 9999999, 99999999 ]
+    # 浮点型 + 浮点型，结果正确
+    - [ 0.1, 0.1, 0.2 ]
+    # 浮点型 + 浮点型，结果错误
+    - [ 1.2, 3.4, 7.9 ]
+    - [ 0.1, 0.2, 0.3 ]
+    # 整型 + 浮点型，结果正确
+    - [ 4, 0.9, 4.9 ]
+    # 整型 + 浮点型，结果错误
+    - [ 5, 2.3, 6.7 ]
+    # 正数 + 负数，结果正确
+    - [ 4, -2, 2 ]
+    # 正数 + 负数，结果错误
+    - [ 0.1, -0.2, 0.3 ]
+    # 负数 + 负数，结果正确
+    - [ -1, -1, -2 ]
+    # 负数 + 负数，结果错误
+    - [ -3, -4, -6 ]
+    # 正整型 + 零，结果正确
+    - [ 7 ,0, 7 ]
+    # 零 + 正浮点型，结果错误
+    - [ 0,0.8,0 ]
+    # 零 + 负浮点数，结果正确
+    - [ 0,-9.87,-9.87 ]
+    # 负整型数 + 零，结果错误
+    - [ -6, 0, 0 ]
+  myid:
+    - 'int_int_right'
+    - 'int_int_wrong'
+    - 'long_long_right'
+    - 'long_long_wrong'
+    - 'float_float_right'
+    - 'float_float_wrong'
+    - 'round'
+    - 'int_float_right'
+    - 'int_float_wrong'
+    - 'positive_negative_right'
+    - 'positive_negative_wrong'
+    - 'negative_negative_right'
+    - 'negative_negative_wrong'
+    - 'positiveint_zero_right'
+    - 'zero_positivefloat_wrong'
+    - 'zero_negativefloat_right'
+    - 'negativeint_zero_wrong'
+
+div:
+  datas:
+    - [ 10, 2, 5 ]
+    - [ 10, 3, 3 ]
+    - [ 10, 2.5, 4 ]
+    - [ 10, 3.7, 2 ]
+    - [ 0.24, 0.3, 0.8 ]
+    - [ 0.24, 0.3, 0.5 ]
+    - [ 7.2, 9, 0.8 ]
+    - [ 7.1, 19, 0.2 ]
+    - [ 0, 5, 0 ]
+    - [ 0, 5, 5 ]
+    - [ 0, 0.7, 0 ]
+    - [ 0, 0.7, 0.7 ]
+    - [ 4, -2, -2 ]
+    - [ -0.5, -2, 0.25 ]
+    - [ 4, 0, 0 ]
+  myid:
+    - 'int_int_right'
+    - 'int_int_wrong'
+    - 'int_float_right'
+    - 'int_float_wrong'
+    - 'float_float_right'
+    - 'float_float_wrong'
+    - 'float_int_right'
+    - 'float_int_wrong'
+    - 'zero_int_right'
+    - 'zero_int_wrong'
+    - 'zero_float_right'
+    - 'zero_float_wrong'
+    - 'positive_negative_right'
+    - 'negative_negative_right'
+    - 'error'

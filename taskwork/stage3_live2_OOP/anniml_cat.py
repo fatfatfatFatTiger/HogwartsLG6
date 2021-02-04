@@ -1,5 +1,5 @@
 
-from HogwartsLG6.Exercise2_OOP.animal import Animal
+from HogwartsLG6.taskwork.stage3_live2_OOP.animal import Animal
 
 
 class Cat(Animal):
