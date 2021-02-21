@@ -1,0 +1,145 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert -0.1 == 0.3",
+      "children" : [ {
+        "name" : "test_add[round]",
+        "uid" : "825dddc02a98d0f1",
+        "parentUid" : "fb1e0065dc0c3c9adac6ca28b9995c4a",
+        "status" : "failed",
+        "time" : {
+          "start" : 1613916340240,
+          "stop" : 1613916340240,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[0.1, -0.2, 0.3]" ]
+      } ],
+      "uid" : "fb1e0065dc0c3c9adac6ca28b9995c4a"
+    }, {
+      "name" : "AssertionError: assert 1.0 == 2",
+      "children" : [ {
+        "name" : "test_div[int]",
+        "uid" : "e59f37f8feb8c267",
+        "parentUid" : "620de6d7ba9cc58cc868b0f82ccabc17",
+        "status" : "failed",
+        "time" : {
+          "start" : 1613916340335,
+          "stop" : 1613916340335,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[1, 1, 2]" ]
+      } ],
+      "uid" : "620de6d7ba9cc58cc868b0f82ccabc17"
+    }, {
+      "name" : "AssertionError: assert 0 == 100",
+      "children" : [ {
+        "name" : "test_sub[bigint]",
+        "uid" : "44e8b422087197a7",
+        "parentUid" : "7672b75ea798fea864031d4712d0391e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1613916340362,
+          "stop" : 1613916340362,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[1000, 1000, 100]" ]
+      } ],
+      "uid" : "7672b75ea798fea864031d4712d0391e"
+    }, {
+      "name" : "AssertionError: assert 0 == -2",
+      "children" : [ {
+        "name" : "test_sub[negative]",
+        "uid" : "5f8a2e2eb213db68",
+        "parentUid" : "79969197b97af7e78f00aa2cf2818173",
+        "status" : "failed",
+        "time" : {
+          "start" : 1613916340378,
+          "stop" : 1613916340378,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[-1, -1, -2]" ]
+      } ],
+      "uid" : "79969197b97af7e78f00aa2cf2818173"
+    }, {
+      "name" : "AssertionError: assert 10000 == 1000",
+      "children" : [ {
+        "name" : "test_mul[bigint]",
+        "uid" : "812b16a08fa52025",
+        "parentUid" : "b94fac7d6c45d891e6d5393dbc65ddfb",
+        "status" : "failed",
+        "time" : {
+          "start" : 1613916340389,
+          "stop" : 1613916340389,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[100, 100, 1000]" ]
+      } ],
+      "uid" : "b94fac7d6c45d891e6d5393dbc65ddfb"
+    }, {
+      "name" : "AssertionError: assert 0.02 == 0.3",
+      "children" : [ {
+        "name" : "test_mul[float]",
+        "uid" : "bccf11aa125a4706",
+        "parentUid" : "51ad18c6fd3046b689c4665ced462da2",
+        "status" : "failed",
+        "time" : {
+          "start" : 1613916340396,
+          "stop" : 1613916340396,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[0.1, 0.2, 0.3]" ]
+      } ],
+      "uid" : "51ad18c6fd3046b689c4665ced462da2"
+    }, {
+      "name" : "AssertionError: assert -0.02 == 0.02",
+      "children" : [ {
+        "name" : "test_mul[round]",
+        "uid" : "a99f0810ee53f3cd",
+        "parentUid" : "4b8d7ccc5d03f126dcd1ec62ddf4bb56",
+        "status" : "failed",
+        "time" : {
+          "start" : 1613916340403,
+          "stop" : 1613916340403,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[0.1, -0.2, 0.02]" ]
+      } ],
+      "uid" : "4b8d7ccc5d03f126dcd1ec62ddf4bb56"
+    }, {
+      "name" : "AssertionError: assert 1 == 2",
+      "children" : [ {
+        "name" : "test_mul[negative]",
+        "uid" : "9c9c4db4c6746532",
+        "parentUid" : "d89f5ad50f342bab320c0753c9baac45",
+        "status" : "failed",
+        "time" : {
+          "start" : 1613916340410,
+          "stop" : 1613916340410,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[-1, -1, 2]" ]
+      } ],
+      "uid" : "d89f5ad50f342bab320c0753c9baac45"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

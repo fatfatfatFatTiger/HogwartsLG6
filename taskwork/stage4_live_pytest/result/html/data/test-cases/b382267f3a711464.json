@@ -1,0 +1,146 @@
+{
+  "uid" : "b382267f3a711464",
+  "name" : "test_mul[negative]",
+  "fullName" : "test_calc_new.TestCalc#test_mul",
+  "historyId" : "f11c0bd982fcae1850533f7b40d33991",
+  "time" : {
+    "start" : 1613916340410,
+    "stop" : 1613916340410,
+    "duration" : 0
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 1 == 2",
+  "statusTrace" : "self = <HogwartsLG6.taskwork.stage4_live_pytest.test_calc_new.TestCalc object at 0x0000024858F19640>\nget_calc1 = <HogwartsLG6.taskwork.stage4_live_pytest.common.calc.Calculator object at 0x0000024858E97520>\nget_mul_datas = [-1, -1, 2]\n\n    @allure.story(\"测试乘法\")\n    def test_mul(self, get_calc1, get_mul_datas):\n        with allure.step(\"计算两个数相乘积\"):\n            result = get_calc1.mul(get_mul_datas[0], get_mul_datas[1])\n        if isinstance(result, float):\n            result = round(result, 2)\n>       assert result == get_mul_datas[2]\nE       assert 1 == 2\n\ntest_calc_new.py:47: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "get_calc1",
+    "time" : {
+      "start" : 1613916340225,
+      "stop" : 1613916340225,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "get_mul_datas",
+    "time" : {
+      "start" : 1613916340410,
+      "stop" : 1613916340410,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 1 == 2",
+    "statusTrace" : "self = <HogwartsLG6.taskwork.stage4_live_pytest.test_calc_new.TestCalc object at 0x0000024858F19640>\nget_calc1 = <HogwartsLG6.taskwork.stage4_live_pytest.common.calc.Calculator object at 0x0000024858E97520>\nget_mul_datas = [-1, -1, 2]\n\n    @allure.story(\"测试乘法\")\n    def test_mul(self, get_calc1, get_mul_datas):\n        with allure.step(\"计算两个数相乘积\"):\n            result = get_calc1.mul(get_mul_datas[0], get_mul_datas[1])\n        if isinstance(result, float):\n            result = round(result, 2)\n>       assert result == get_mul_datas[2]\nE       assert 1 == 2\n\ntest_calc_new.py:47: AssertionError",
+    "steps" : [ {
+      "name" : "计算两个数相乘积",
+      "time" : {
+        "start" : 1613916340410,
+        "stop" : 1613916340410,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "dfe83aa291ba8187",
+      "name" : "stdout",
+      "source" : "dfe83aa291ba8187.txt",
+      "type" : "text/plain",
+      "size" : 144
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 1,
+    "hasContent" : true,
+    "stepsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "get_mul_datas::0",
+    "time" : {
+      "start" : 1613916340414,
+      "stop" : 1613916340414,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "测试计算器"
+  }, {
+    "name" : "story",
+    "value" : "测试乘法"
+  }, {
+    "name" : "suite",
+    "value" : "test_calc_new"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCalc"
+  }, {
+    "name" : "host",
+    "value" : "ELF"
+  }, {
+    "name" : "thread",
+    "value" : "6812-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_calc_new"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "get_mul_datas",
+    "value" : "[-1, -1, 2]"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "b382267f3a711464.json",
+  "parameterValues" : [ "[-1, -1, 2]" ]
+}
