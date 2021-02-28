@@ -1,0 +1,209 @@
+{
+  "uid" : "88c7f6a75fca8c30",
+  "name" : "test_addmember[user1_0009]",
+  "fullName" : "test_member.TestContact#test_addmember",
+  "historyId" : "a2b70bdf0d7643bc81b8136d1a55bfa6",
+  "time" : {
+    "start" : 1614486967371,
+    "stop" : 1614486969286,
+    "duration" : 1915
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "get_member_datas",
+    "time" : {
+      "start" : 1614486966767,
+      "stop" : 1614486966769,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "输入用户名aaaa_0009",
+      "time" : {
+        "start" : 1614486967549,
+        "stop" : 1614486968558,
+        "duration" : 1009
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "输入账户aaaa_0009",
+      "time" : {
+        "start" : 1614486968558,
+        "stop" : 1614486968601,
+        "duration" : 43
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "输入手机号码13012300009",
+      "time" : {
+        "start" : 1614486968601,
+        "stop" : 1614486968644,
+        "duration" : 43
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "点击保存按钮",
+      "time" : {
+        "start" : 1614486968644,
+        "stop" : 1614486968741,
+        "duration" : 97
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "等待联系人复选框出现",
+      "time" : {
+        "start" : 1614486968741,
+        "stop" : 1614486969275,
+        "duration" : 534
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "获取已添加联系人姓名列表",
+      "time" : {
+        "start" : 1614486969279,
+        "stop" : 1614486969286,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 6,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "get_member_datas::0",
+    "time" : {
+      "start" : 1614486969288,
+      "stop" : 1614486969288,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "测试联系人添加"
+  }, {
+    "name" : "story",
+    "value" : "测试添加联系人并判断是否添加成功"
+  }, {
+    "name" : "suite",
+    "value" : "test_member"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestContact"
+  }, {
+    "name" : "host",
+    "value" : "ELF"
+  }, {
+    "name" : "thread",
+    "value" : "6292-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_member"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "get_member_datas",
+    "value" : "['aaaa_0009', 'aaaa_0009', '13012300009']"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "bdd403fbfae131b9",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+      "time" : {
+        "start" : 1614486937152,
+        "stop" : 1614486948972,
+        "duration" : 11820
+      }
+    }, {
+      "uid" : "27604c479a274253",
+      "status" : "passed",
+      "time" : {
+        "start" : 1614486429315,
+        "stop" : 1614486431272,
+        "duration" : 1957
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "88c7f6a75fca8c30.json",
+  "parameterValues" : [ "['aaaa_0009', 'aaaa_0009', '13012300009']" ]
+}
