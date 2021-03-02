@@ -1,1 +1,11 @@
 完成添加联系人PO封装
+
+
+前提：已开启浏览器复用
+
+命令行依次执行代码如下代码：
+pytest --alluredir=../results -vs test_member.py
+allure generate ../results/ -o ../reports/ --clean
+
+
+

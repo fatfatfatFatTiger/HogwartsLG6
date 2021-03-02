@@ -1,0 +1,3 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Tue Mar 02 20:20:36 CST 2021","Tue Mar 02 20:20:39 CST 2021","2836","","test_member","TestContact","","","test_addmember[user_0009]",""
+"passed","Tue Mar 02 20:20:39 CST 2021","Tue Mar 02 20:20:42 CST 2021","2464","","test_member","TestContact","","","test_addmember[user_0010]",""
