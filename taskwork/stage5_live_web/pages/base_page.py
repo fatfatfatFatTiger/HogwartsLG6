@@ -52,6 +52,6 @@ class BasePage:
         :param locator: 元素定位方式
         :return:
         """
-        # 显示等待是局部等待
+        # 显式等待是局部等待
         WebDriverWait(self.driver, timeout).until(expected_conditions.element_to_be_clickable(locator))
 
