@@ -2,11 +2,9 @@
 # @File : test_wework.py
 # @Author : Elf
 # @Time : 2021/3/6 17:13
-import time
 
 from appium import webdriver
 from appium.webdriver.common.mobileby import MobileBy
-# from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 

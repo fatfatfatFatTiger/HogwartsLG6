@@ -1,0 +1,8 @@
+goto_addmember_page:
+  - action: swip_click
+    text: 添加成员
+
+  - action: find_click
+    mode: xpath
+    locator: //*[@text="手动输入添加"]
+

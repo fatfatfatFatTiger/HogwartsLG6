@@ -1,0 +1,151 @@
+[ {
+  "uid" : "8823e7fe5238ac9",
+  "name" : "test_addmember[user_A_0001]",
+  "time" : {
+    "start" : 1615021685650,
+    "stop" : 1615021688299,
+    "duration" : 2649
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9472b2e22450fe32",
+  "name" : "test_addmember[user_B_0005]",
+  "time" : {
+    "start" : 1615021701308,
+    "stop" : 1615021702339,
+    "duration" : 1031
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8c92557b89f83f9a",
+  "name" : "test_addmember[user_C_0004]",
+  "time" : {
+    "start" : 1615021707931,
+    "stop" : 1615021709082,
+    "duration" : 1151
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7e8044d063bae14f",
+  "name" : "test_addmember[user_B_0003]",
+  "time" : {
+    "start" : 1615021698120,
+    "stop" : 1615021699062,
+    "duration" : 942
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "afd282ddd113b786",
+  "name" : "test_addmember[user_C_0003]",
+  "time" : {
+    "start" : 1615021706245,
+    "stop" : 1615021707285,
+    "duration" : 1040
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "240217dada572a93",
+  "name" : "test_addmember[user_C_0001]",
+  "time" : {
+    "start" : 1615021702954,
+    "stop" : 1615021703946,
+    "duration" : 992
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c8ea1b73b054096f",
+  "name" : "test_addmember[user_A_0005]",
+  "time" : {
+    "start" : 1615021693611,
+    "stop" : 1615021694499,
+    "duration" : 888
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4b8d32e132f1ace8",
+  "name" : "test_addmember[user_B_0001]",
+  "time" : {
+    "start" : 1615021695107,
+    "stop" : 1615021696020,
+    "duration" : 913
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4d60b6457472b9a9",
+  "name" : "test_addmember[user_A_0003]",
+  "time" : {
+    "start" : 1615021690482,
+    "stop" : 1615021691433,
+    "duration" : 951
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bd5487eb67e887d2",
+  "name" : "test_addmember[user_B_0002]",
+  "time" : {
+    "start" : 1615021696608,
+    "stop" : 1615021697516,
+    "duration" : 908
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1457fb14c6e50554",
+  "name" : "test_addmember[user_C_0002]",
+  "time" : {
+    "start" : 1615021704554,
+    "stop" : 1615021705613,
+    "duration" : 1059
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c5b962b373c310b5",
+  "name" : "test_addmember[user_C_0005]",
+  "time" : {
+    "start" : 1615021709716,
+    "stop" : 1615021710829,
+    "duration" : 1113
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a517aced71828fdb",
+  "name" : "test_addmember[user_A_0004]",
+  "time" : {
+    "start" : 1615021692035,
+    "stop" : 1615021692992,
+    "duration" : 957
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1fd8ea4059638d52",
+  "name" : "test_addmember[user_B_0004]",
+  "time" : {
+    "start" : 1615021699665,
+    "stop" : 1615021700674,
+    "duration" : 1009
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f15482b94aaecc2b",
+  "name" : "test_addmember[user_A_0002]",
+  "time" : {
+    "start" : 1615021688908,
+    "stop" : 1615021689885,
+    "duration" : 977
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
