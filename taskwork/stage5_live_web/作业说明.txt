@@ -7,5 +7,3 @@
 pytest --alluredir=../results -vs test_member.py
 allure generate ../results/ -o ../reports/ --clean
 
-
-
