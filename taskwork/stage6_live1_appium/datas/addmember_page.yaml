@@ -1,13 +1,13 @@
 input_info:
   - action: find_input
-    mode: xpath
+    by: xpath
     input_key: 姓名
     locator: //*[contains(@text, "姓名")]/..//*[@text="必填"]
     input_value: tester
     desc: 输入姓名
 
   - action: find_click
-    mode: xpath
+    by: xpath
     locator: //*[contains(@text, "性别")]/..//*[@text="男"]
     desc: 点击性别
 
@@ -17,25 +17,25 @@ input_info:
     desc: 强制等待性别选项弹框出现
 
   - action: find_click
-    mode: xpath
+    by: xpath
     locator: //*[@resource-id="com.tencent.wework:id/b9z"]//*[@index="1"]
     desc: 选择性别女
 
   - action: find_input
-    mode: xpath
+    by: xpath
     input_key: 手机号
     locator: //*[@text="手机号"]
     input_value: 18912312345
     desc: 输入手机号
 
   - action: find_click
-    mode: id
+    by: id
     locator: gur
     desc: 点击保存
 
 assert_result:
   - action: find_click_get
-    mode: xpath
+    by: xpath
     locator: //*[@class="android.widget.Toast"]
     # locator: /hierarchy/android.widget.Toast
     # locator: //*[contains(@text, "添加成功")]

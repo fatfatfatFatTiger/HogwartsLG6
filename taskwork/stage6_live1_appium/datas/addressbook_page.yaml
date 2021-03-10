@@ -3,6 +3,8 @@ goto_addmember_page:
     text: 添加成员
 
   - action: find_click
-    mode: xpath
+    by: xpath
     locator: //*[@text="手动输入添加"]
+
+
 

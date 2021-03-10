@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# @File : workbench_page.py
+# @File : addressbook_page.py
 # @Author : Elf
 # @Time : 2021/3/7 17:38
 
@@ -18,4 +18,6 @@ class AddressbookPage(BasePage):
         # 2.点击“手动输入添加”按钮，跳转到[添加成员]页面
         self.parse_configfile('../datas/addressbook_page.yaml', 'goto_addmember_page')
         return AddmemberPage(self.driver)
+
+
 

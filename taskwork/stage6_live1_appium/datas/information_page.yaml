@@ -1,4 +1,4 @@
 goto_addressbook_page:
-  - mode: xpath
+  - action: find_click
+    by: xpath
     locator: //*[@text="通讯录"]
-    action: find_click

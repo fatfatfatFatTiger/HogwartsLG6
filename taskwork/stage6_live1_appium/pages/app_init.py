@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# @File : app.py
+# @File : app_init.py
 # @Author : Elf
 # @Time : 2021/3/7 17:26
 
@@ -18,7 +18,7 @@ class AppInit:
             "deviceName": "127.0.0.1:7555",
             "appPackage": "com.tencent.wework",
             "appActivity": ".launch.LaunchSplashActivity",
-            "noReset": "true",
+            "noReset": "true",  # 不清除session信息，如果上一个测试用例登陆成功了，下一个测试用例，在打开app时，进来的页面是登录成功后的页面，会保持登录状态
             "settings[waitForIdleTimeout]": 0,
             "automationName": "uiautomator2",
             "skipDeviceInitialization": "true"  # 跳过设备初始化

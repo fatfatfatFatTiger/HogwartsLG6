@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# @File : signin_page.py
+# @File : addmember_page.py
 # @Author : Elf
 # @Time : 2021/3/7 18:14
 
@@ -21,5 +21,4 @@ class AddmemberPage(BasePage):
         # 获取保存成功后的弱提示文字
         result = self.parse_configfile(configfile_path, 'assert_result')
         assert "添加成功" == result
-
 

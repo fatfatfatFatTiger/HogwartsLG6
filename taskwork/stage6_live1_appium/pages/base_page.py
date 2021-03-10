@@ -15,30 +15,39 @@ class BasePage:
     def __init__(self, driver: WebDriver):
         self.driver = driver
 
-    def find_click(self, mode, locator):
+    def find(self, mode, locator):
+        """
+        找到元素
+        :param mode: 查找方式，如id、xpath
+        :param locator: 定位元素
+        :return: 找到的元素
+        """
+        if mode == "id":
+            return self.driver.find_element(MobileBy.ID, locator)
+        elif mode == "xpath":
+            return self.driver.find_element(MobileBy.XPATH, locator)
+
+    def find_click(self, by, locator):
         """
         找到元素并点击
-        :param mode: 点击方式，如id、xpath
+        :param by: yaml中传入的点击方式，如id、xpath
         :param locator: 元素位置
         :return:
         """
-        if mode == "id":
-            self.driver.find_element(MobileBy.ID, locator).click()
-        elif mode == "xpath":
-            self.driver.find_element(MobileBy.XPATH, locator).click()
+        self.find(by, locator).click()
 
-    def find_input(self, mode, locator, text):
+    def find_input(self, by, locator, text):
         """
         找到元素并输入内容
-        :param mode: 点击方式，如id、xpath
+        :param by: 点击方式，如id、xpath
         :param locator: 元素位置
         :param text: 待输入的内容
         :return:
         """
-        if mode == "id":
-            self.driver.find_element(MobileBy.ID, locator).send_keys(text)
-        elif mode == "xpath":
-            self.driver.find_element(MobileBy.XPATH, locator).send_keys(text)
+        if by == "id":
+            self.find(MobileBy.ID, locator).send_keys(text)
+        elif by == "xpath":
+            self.find(MobileBy.XPATH, locator).send_keys(text)
 
     def wait_for_click(self, time, locator):
         """
@@ -49,18 +58,6 @@ class BasePage:
         """
         loc = (MobileBy.XPATH, locator)
         WebDriverWait(self.driver, time).until(expected_conditions.element_to_be_clickable(loc))
-
-    def find_get(self, mode, locator):
-        """
-        找到元素并获取文字
-        :param mode: 查找方式，如id、xpath
-        :param locator: 定位元素
-        :return: 定位元素的text
-        """
-        if mode == "id":
-            return self.driver.find_element(MobileBy.ID, locator).text
-        elif mode == "xpath":
-            return self.driver.find_element(MobileBy.XPATH, locator).text
 
     def swip_click(self, text):
         """
@@ -94,14 +91,14 @@ class BasePage:
                 self.swip_click(step["text"])
             elif step["action"] == "find_click":
                 # 找到元素并点击
-                self.find_click(step["mode"], step["locator"])
+                self.find_click(step["by"], step["locator"])
             elif step["action"] == "find_input":
                 # 找到元素并输入内容
-                self.find_input(step["mode"], step["locator"], step["input_value"])
+                self.find_input(step["by"], step["locator"], step["input_value"])
             elif step["action"] == "wait_for_click":
                 # 显示等待元素出现
                 self.wait_for_click(step["time"], step["locator"])
             elif step["action"] == "find_click_get":
                 # 找到元素并获取文字
-                return self.find_get(step["mode"], step["locator"])
+                return self.find(step["by"], step["locator"]).text
 
