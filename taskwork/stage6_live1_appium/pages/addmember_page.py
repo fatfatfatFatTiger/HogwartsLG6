@@ -7,15 +7,15 @@ from HogwartsLG6.taskwork.stage6_live1_appium.pages.base_page import BasePage
 
 
 class AddmemberPage(BasePage):
-    def add_member_and_assert(self):
-        """
-        录入信息，保存联系人，并断言是否添加成功
-        :return:
-        """
-        configfile_path = '../datas/addmember_page.yaml'
+    def add_member_and_assert(self, key):
+        # 初始化需要sendkeys的值
+        self._member_info = {
+            "name": key[0]["name"],
+            "phone": key[0]["phone"]
+        }
 
-        # 当前类继承BasePage类，可直接调用基类中解析配置文件方法
-        # 依次输入姓名、选择性别、输入手机号、点击保存按钮
+        configfile_path = '../datas/addmember_page.yaml'
+        # 读取配置文件，完成添加成员操作
         self.parse_configfile(configfile_path, 'input_info')
 
         # 获取保存成功后的弱提示文字

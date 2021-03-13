@@ -3,7 +3,8 @@ input_info:
     by: xpath
     input_key: 姓名
     locator: //*[contains(@text, "姓名")]/..//*[@text="必填"]
-    input_value: tester
+#    input_value: tester
+    input_value: "{name}"
     desc: 输入姓名
 
   - action: find_click
@@ -18,14 +19,15 @@ input_info:
 
   - action: find_click
     by: xpath
-    locator: //*[@resource-id="com.tencent.wework:id/b9z"]//*[@index="1"]
+    locator: //*[@resource-id="com.tencent.wework:id/b9z"]//*[@text="女"]
     desc: 选择性别女
 
   - action: find_input
     by: xpath
     input_key: 手机号
     locator: //*[@text="手机号"]
-    input_value: 18912312345
+#    input_value: 18912312345
+    input_value: "{phone}"
     desc: 输入手机号
 
   - action: find_click

@@ -12,20 +12,20 @@ from selenium.webdriver.support.wait import WebDriverWait
 
 
 class BasePage:
+    # 私有变量，存放sendkeys中的值
+    _member_info = {}
+
     def __init__(self, driver: WebDriver):
         self.driver = driver
 
-    def find(self, mode, locator):
+    def find(self, by, locator):
         """
         找到元素
-        :param mode: 查找方式，如id、xpath
+        :param by: 查找方式，如id、xpath
         :param locator: 定位元素
         :return: 找到的元素
         """
-        if mode == "id":
-            return self.driver.find_element(MobileBy.ID, locator)
-        elif mode == "xpath":
-            return self.driver.find_element(MobileBy.XPATH, locator)
+        return self.driver.find_element(by, locator)
 
     def find_click(self, by, locator):
         """
@@ -44,10 +44,7 @@ class BasePage:
         :param text: 待输入的内容
         :return:
         """
-        if by == "id":
-            self.find(MobileBy.ID, locator).send_keys(text)
-        elif by == "xpath":
-            self.find(MobileBy.XPATH, locator).send_keys(text)
+        self.find(by, locator).send_keys(text)
 
     def wait_for_click(self, time, locator):
         """
@@ -93,8 +90,15 @@ class BasePage:
                 # 找到元素并点击
                 self.find_click(step["by"], step["locator"])
             elif step["action"] == "find_input":
-                # 找到元素并输入内容
-                self.find_input(step["by"], step["locator"], step["input_value"])
+                # 获取addmember_page.yaml文件中待输入元素的value，此处已参数化，需要从members.yaml文件中读取待录入成员数据
+                input_value: str = step["input_value"]    # {name}、{phone}
+                for key in self._member_info:
+                    # 判断addmember_page.yaml中各个操作的元素参数化格式名与members.yaml中自定义的用户信息key值，如果相同，则替换为输入值，并直接输入该值
+                    if "{%s}" % key == input_value:
+                        input_value = input_value.replace("{%s}" % key, self._member_info[key])
+                        # 找到元素并输入内容
+                        self.find_input(step["by"], step["locator"], input_value)
+                        break
             elif step["action"] == "wait_for_click":
                 # 显示等待元素出现
                 self.wait_for_click(step["time"], step["locator"])

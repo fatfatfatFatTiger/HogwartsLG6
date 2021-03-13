@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# @File : message_page.py
+# @File : information_page.py
 # @Author : Elf
 # @Time : 2021/3/7 17:31
 

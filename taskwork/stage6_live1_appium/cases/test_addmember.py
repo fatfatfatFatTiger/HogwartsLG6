@@ -12,5 +12,8 @@ class TestAddmember:
         self.app = AppInit()
 
     def test_add(self):
-        self.app.goto_info_page().goto_addressbook_page().goto_addmember_page().add_member_and_assert()
+        with open("../datas/members.yaml", "r", encoding="utf-8") as f:
+            # 获取待添加的用户信息，格式为List[dict, dict, dict...]，一个dict代表一个用户的信息
+            member_info = yaml.safe_load(f)["info"]
+        self.app.goto_info_page().goto_addressbook_page().goto_addmember_page().add_member_and_assert(member_info)
 
