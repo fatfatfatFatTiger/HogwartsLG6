@@ -10,5 +10,5 @@
   - stage5_live_web 为第五阶段直播课作业
   - stage6_record_appium 为第六阶段录播课作业
   - stage6_live1_appium 为第六阶段第一次直播课作业
+  - stage6_live2_frame 为第六阶段第二次直播课作业
 
-- exercise文件夹为代码练习
