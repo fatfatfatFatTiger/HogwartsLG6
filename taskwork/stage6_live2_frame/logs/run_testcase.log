@@ -1,0 +1,40 @@
+Mon, 15 Mar 2021 20:35:34 app_init.py[line:37] INFO 【Step1: 链式调用跳转到[消息]页面】
+Mon, 15 Mar 2021 20:35:34 base_page.py[line:38] INFO find: by=xpath, locator=//*[@text="通讯录"]
+Mon, 15 Mar 2021 20:35:37 information_page.py[line:18] INFO 【Step2: [消息]页面点击底部通讯录进入[通讯录]页面】
+Mon, 15 Mar 2021 20:35:37 base_page.py[line:38] INFO find: by=id, locator=igk
+Mon, 15 Mar 2021 20:35:41 addresslist_page.py[line:18] INFO 【Step3: 点击[通讯录]页面右上角放大镜，进入[搜索]页面】
+Mon, 15 Mar 2021 20:35:41 base_page.py[line:38] INFO find: by=xpath, locator=//*[@text="搜索"]
+Mon, 15 Mar 2021 20:35:43 search_page.py[line:19] INFO 【Step4: [搜索]页面输入查询关键字】
+Mon, 15 Mar 2021 20:35:43 base_page.py[line:86] INFO finds: by=xpath, locator=//*[contains(@text,"hogwards") and @class="android.widget.TextView"]
+Mon, 15 Mar 2021 20:35:45 search_page.py[line:29] INFO 【删除用户前获取搜索结果个数】
+Mon, 15 Mar 2021 20:35:45 base_page.py[line:38] INFO find: by=xpath, locator=//*[@text="hogwards_100"]/../../*[@text="elf测试企业/财务部"]
+Mon, 15 Mar 2021 20:35:46 search_page.py[line:40] INFO 【Step5: 点击查询结果中要删除的用户，进入[个人信息]页面】
+Mon, 15 Mar 2021 20:35:46 base_page.py[line:25] INFO find: by=id, locator=iga
+Mon, 15 Mar 2021 20:35:49 personalinfo_page.py[line:19] INFO 【Step6: 个人信息页面点击页面右上角三个点，进入[个人信息-设置]页面】
+Mon, 15 Mar 2021 20:35:49 base_page.py[line:38] INFO find: by=xpath, locator=//*[contains(@text,"编辑成员")]
+Mon, 15 Mar 2021 20:35:51 personalinfosetup_page.py[line:19] INFO 【Step7: [个人信息-设置]页面点击编辑成员，进入[编辑成员]页面】
+Mon, 15 Mar 2021 20:35:51 base_page.py[line:38] INFO find: by=xpath, locator=//*[contains(@text,"删除成员")]
+Mon, 15 Mar 2021 20:35:52 base_page.py[line:38] INFO find: by=xpath, locator=//*[contains(@text,"确定")]
+Mon, 15 Mar 2021 20:35:53 editmember_page.py[line:17] INFO 【Step8: [编辑成员]页面点击删除成员按钮】
+Mon, 15 Mar 2021 20:35:54 base_page.py[line:86] INFO finds: by=xpath, locator=//*[contains(@text,"hogwards") and @class="android.widget.TextView"]
+Mon, 15 Mar 2021 20:35:54 editmember_page.py[line:29] INFO 【删除用户后获取搜索结果个数】
+Mon, 15 Mar 2021 20:38:55 app_init.py[line:37] INFO 【Step1: 链式调用跳转到[消息]页面】
+Mon, 15 Mar 2021 20:38:55 base_page.py[line:38] INFO find: by=xpath, locator=//*[@text="通讯录"]
+Mon, 15 Mar 2021 20:38:58 information_page.py[line:18] INFO 【Step2: [消息]页面点击底部通讯录进入[通讯录]页面】
+Mon, 15 Mar 2021 20:38:58 base_page.py[line:38] INFO find: by=id, locator=igk
+Mon, 15 Mar 2021 20:39:00 addresslist_page.py[line:18] INFO 【Step3: 点击[通讯录]页面右上角放大镜，进入[搜索]页面】
+Mon, 15 Mar 2021 20:39:00 base_page.py[line:38] INFO find: by=xpath, locator=//*[@text="搜索"]
+Mon, 15 Mar 2021 20:39:02 search_page.py[line:19] INFO 【Step4: [搜索]页面输入查询关键字】
+Mon, 15 Mar 2021 20:39:02 base_page.py[line:86] INFO finds: by=xpath, locator=//*[contains(@text,"hogwards") and @class="android.widget.TextView"]
+Mon, 15 Mar 2021 20:39:03 search_page.py[line:29] INFO 【删除用户前获取搜索结果个数】
+Mon, 15 Mar 2021 20:39:03 base_page.py[line:38] INFO find: by=xpath, locator=//*[@text="hogwards_100"]/../../*[@text="elf测试企业/财务部"]
+Mon, 15 Mar 2021 20:39:04 search_page.py[line:40] INFO 【Step5: 点击查询结果中要删除的用户，进入[个人信息]页面】
+Mon, 15 Mar 2021 20:39:04 base_page.py[line:25] INFO find: by=id, locator=iga
+Mon, 15 Mar 2021 20:39:07 personalinfo_page.py[line:19] INFO 【Step6: 个人信息页面点击页面右上角三个点，进入[个人信息-设置]页面】
+Mon, 15 Mar 2021 20:39:07 base_page.py[line:38] INFO find: by=xpath, locator=//*[contains(@text,"编辑成员")]
+Mon, 15 Mar 2021 20:39:09 personalinfosetup_page.py[line:19] INFO 【Step7: [个人信息-设置]页面点击编辑成员，进入[编辑成员]页面】
+Mon, 15 Mar 2021 20:39:09 base_page.py[line:38] INFO find: by=xpath, locator=//*[contains(@text,"删除成员")]
+Mon, 15 Mar 2021 20:39:10 base_page.py[line:38] INFO find: by=xpath, locator=//*[contains(@text,"确定")]
+Mon, 15 Mar 2021 20:39:11 editmember_page.py[line:17] INFO 【Step8: [编辑成员]页面点击删除成员按钮】
+Mon, 15 Mar 2021 20:39:12 base_page.py[line:86] INFO finds: by=xpath, locator=//*[contains(@text,"hogwards") and @class="android.widget.TextView"]
+Mon, 15 Mar 2021 20:39:12 editmember_page.py[line:29] INFO 【删除用户后获取搜索结果个数】

@@ -1,0 +1,19 @@
+delete_member:
+  - action: find_click
+    by: xpath
+    locator: //*[contains(@text,"删除成员")]
+
+  - action: find_click
+    by: xpath
+    locator: //*[contains(@text,"确定")]
+
+get_after_del_results:
+  - action: wait
+    time: 8
+    locator: //*[contains(@text,"${search_keyword}") and @class="android.widget.TextView"]
+
+  - action: finds_getnum
+    by: xpath
+    locator: //*[contains(@text,"${search_keyword}") and @class="android.widget.TextView"]
+
+

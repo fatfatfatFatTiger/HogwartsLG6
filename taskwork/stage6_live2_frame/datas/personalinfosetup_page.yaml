@@ -1,0 +1,4 @@
+click_edit:
+  - action: find_click
+    by: xpath
+    locator: //*[contains(@text,"编辑成员")]

@@ -1,0 +1,4 @@
+click_setup:
+  - action: find_click
+    by: id
+    locator: iga

@@ -1,0 +1,4 @@
+click_search:
+  - action: find_click
+    by: id
+    locator: igk
