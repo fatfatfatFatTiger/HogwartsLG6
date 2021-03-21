@@ -1,0 +1,24 @@
+使用mitmproxy，贴出来脚本内容和效果截图
+  · 对第一个股票保持原样
+  · 对第二个股票名字加长一倍
+  · 对第三个股票名字变成空
+
+
+【rewrite】
+1.模拟器开启代理，端口为：8889
+2.在python文件所在目录，打开Terminal，执行命令：mitmdump -p 8889 -s test_rewrite.py
+3.打开雪球APP，行情页面下拉刷新页面，查看结果
+
+【map_local】
+1.模拟器开启代理，端口为：8889
+2.使用charles抓包，将抓包结果保存为json文件
+3.在python文件所在目录，打开Terminal，执行命令：mitmdump -p 8889 -s test_map_local.py
+4.打开雪球APP，行情页面下拉刷新页面，查看结果
+
+【recursion】
+1.模拟器开启代理，端口为：8889
+2.在python文件所在目录，打开Terminal，执行命令：mitmdump -p 8889 -s test_recursion.py
+3.打开雪球APP，行情页面下拉刷新页面，查看结果
+注：第2步可修改文件名为非test开头，然后直接运行文件，在下拉刷新雪球行情页面查看结果，但需要先停止Terminal中的mitmdump
+
+
