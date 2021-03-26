@@ -1,0 +1,125 @@
+{
+  "uid" : "24743965b6a1badc",
+  "name" : "test_uptate_member[update_user1]",
+  "fullName" : "test_contact.TestContact#test_uptate_member",
+  "historyId" : "95541825a2865be6c30ae45983359c65",
+  "time" : {
+    "start" : 1616768986459,
+    "stop" : 1616768987060,
+    "duration" : 601
+  },
+  "description" : "\n        更新成员\n        :param get_assess_token: 企业微信assess_token\n        :param get_update_info: 需更新成员的测试数据\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    更新成员\n    :param get_assess_token: 企业微信assess_token\n    :param get_update_info: 需更新成员的测试数据\n    :return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "get_assess_token",
+    "time" : {
+      "start" : 1616768984253,
+      "stop" : 1616768984534,
+      "duration" : 281
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "get_update_info",
+    "time" : {
+      "start" : 1616768986459,
+      "stop" : 1616768986459,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "get_update_info::0",
+    "time" : {
+      "start" : 1616768987060,
+      "stop" : 1616768987060,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "更新成员"
+  }, {
+    "name" : "feature",
+    "value" : "企业微信通讯录相关测试"
+  }, {
+    "name" : "suite",
+    "value" : "test_contact"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestContact"
+  }, {
+    "name" : "host",
+    "value" : "ELF"
+  }, {
+    "name" : "thread",
+    "value" : "13136-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_contact"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "get_update_info",
+    "value" : "{'userid': 'hogwards_tester1', 'name': '海盗船长001', 'alias': 'jack001'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "e72c8900a461140a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1616768897156,
+        "stop" : 1616768897457,
+        "duration" : 301
+      }
+    }, {
+      "uid" : "1bf888097320dfc1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1616759507989,
+        "stop" : 1616759508289,
+        "duration" : 300
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "24743965b6a1badc.json",
+  "parameterValues" : [ "{'userid': 'hogwards_tester1', 'name': '海盗船长001', 'alias': 'jack001'}" ]
+}

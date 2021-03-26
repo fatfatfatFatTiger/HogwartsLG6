@@ -1,0 +1,49 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Mar 26 22:29:47 CST 2021","Fri Mar 26 22:29:47 CST 2021","500","","test_contact","TestContact","","","test_uptate_member[update_user2]","
+        更新成员
+        :param get_assess_token: 企业微信assess_token
+        :param get_update_info: 需更新成员的测试数据
+        :return:
+        "
+"passed","Fri Mar 26 22:29:45 CST 2021","Fri Mar 26 22:29:46 CST 2021","691","","test_contact","TestContact","","","test_get_member[get_user2]","
+        读取成员
+        :param get_assess_token: 企业微信assess_token
+        :param get_query_info: 需读取成员的测试数据
+        :return:
+        "
+"passed","Fri Mar 26 22:29:44 CST 2021","Fri Mar 26 22:29:44 CST 2021","440","","test_contact","TestContact","","","test_create_member[add_user1]","
+        创建成员
+        :param get_assess_token: 企业微信assess_token
+        :param get_create_info: 需创建成员的测试数据
+        :return:
+        "
+"passed","Fri Mar 26 22:29:47 CST 2021","Fri Mar 26 22:29:47 CST 2021","361","","test_contact","TestContact","","","test_delete_member[delete_user1]","
+        删除成员
+        :param get_assess_token: 企业微信assess_token
+        :param get_delete_info: 需更新成员的测试数据
+        :return:
+        "
+"passed","Fri Mar 26 22:29:46 CST 2021","Fri Mar 26 22:29:47 CST 2021","601","","test_contact","TestContact","","","test_uptate_member[update_user1]","
+        更新成员
+        :param get_assess_token: 企业微信assess_token
+        :param get_update_info: 需更新成员的测试数据
+        :return:
+        "
+"passed","Fri Mar 26 22:29:44 CST 2021","Fri Mar 26 22:29:45 CST 2021","500","","test_contact","TestContact","","","test_create_member[add_user2]","
+        创建成员
+        :param get_assess_token: 企业微信assess_token
+        :param get_create_info: 需创建成员的测试数据
+        :return:
+        "
+"passed","Fri Mar 26 22:29:47 CST 2021","Fri Mar 26 22:29:48 CST 2021","482","","test_contact","TestContact","","","test_delete_member[delete_user2]","
+        删除成员
+        :param get_assess_token: 企业微信assess_token
+        :param get_delete_info: 需更新成员的测试数据
+        :return:
+        "
+"passed","Fri Mar 26 22:29:45 CST 2021","Fri Mar 26 22:29:45 CST 2021","262","","test_contact","TestContact","","","test_get_member[get_user1]","
+        读取成员
+        :param get_assess_token: 企业微信assess_token
+        :param get_query_info: 需读取成员的测试数据
+        :return:
+        "

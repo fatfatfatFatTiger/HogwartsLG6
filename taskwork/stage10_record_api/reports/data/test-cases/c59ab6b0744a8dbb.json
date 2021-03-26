@@ -1,0 +1,107 @@
+{
+  "uid" : "c59ab6b0744a8dbb",
+  "name" : "test_delete_member[delete_user1]",
+  "fullName" : "test_contact.TestContact#test_delete_member",
+  "historyId" : "4451c78e7b7bb7a8d028836c7e7bbde3",
+  "time" : {
+    "start" : 1616759508606,
+    "stop" : 1616759508937,
+    "duration" : 331
+  },
+  "description" : "\n        删除成员\n        :param get_assess_token: 企业微信assess_token\n        :param get_delete_info: 需更新成员的测试数据\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    删除成员\n    :param get_assess_token: 企业微信assess_token\n    :param get_delete_info: 需更新成员的测试数据\n    :return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "get_delete_info",
+    "time" : {
+      "start" : 1616759508606,
+      "stop" : 1616759508606,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "get_assess_token",
+    "time" : {
+      "start" : 1616759505410,
+      "stop" : 1616759506562,
+      "duration" : 1152
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "get_delete_info::0",
+    "time" : {
+      "start" : 1616759508940,
+      "stop" : 1616759508940,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "企业微信通讯录相关测试"
+  }, {
+    "name" : "story",
+    "value" : "删除成员"
+  }, {
+    "name" : "suite",
+    "value" : "test_contact"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestContact"
+  }, {
+    "name" : "host",
+    "value" : "ELF"
+  }, {
+    "name" : "thread",
+    "value" : "14324-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_contact"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "get_delete_info",
+    "value" : "{'userid': 'hogwards_tester1'}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c59ab6b0744a8dbb.json",
+  "parameterValues" : [ "{'userid': 'hogwards_tester1'}" ]
+}

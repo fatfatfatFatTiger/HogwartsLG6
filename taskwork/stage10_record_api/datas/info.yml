@@ -1,0 +1,48 @@
+CompanyInfo:
+  company_id: ww083d524bf8589d8a
+  company_secret: gCwj1u15y0x_bh3O0gm8wgxQk3XW7nXp-nEGziPC-TY
+
+CreateMemberInfo:
+  datas:
+    - userid: hogwards_tester1
+      name: 海盗船长
+      alias: jack
+      mobile: +86 18912340001
+      department: [ 2 ]
+    - userid: hogwards_tester2
+      name: 怪盗基德
+      alias: kidd
+      mobile: +86 18912340002
+      department: [ 3 ]
+  ids:
+    - 'add_user1'
+    - 'add_user2'
+
+GetMemberInfo:
+  datas:
+    - userid: hogwards_tester1
+    - userid: hogwards_tester2
+  ids:
+    - 'get_user1'
+    - 'get_user2'
+
+UpdateMemeberInfo:
+  datas:
+    - userid: hogwards_tester1
+      name: 海盗船长001
+      alias: jack001
+    - userid: hogwards_tester2
+      name: 怪盗基德001
+      alias: kidd001
+  ids:
+    - 'update_user1'
+    - 'update_user2'
+
+DeleteMemeberInfo:
+  datas:
+    - userid: hogwards_tester1
+    - userid: hogwards_tester2
+  ids:
+    - 'delete_user1'
+    - 'delete_user2'
+
