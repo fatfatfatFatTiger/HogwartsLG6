@@ -1,0 +1,55 @@
+CompanyInfo:
+  company_id: ww083d524bf8589d8a
+  company_secret: gCwj1u15y0x_bh3O0gm8wgxQk3XW7nXp-nEGziPC-TY
+
+MemberInfo:
+  datas:
+    - userid: hogwards_tester1
+      name: 仙道彰
+      alias: tester1
+      mobile: +86 18912340001
+      department: [ 3 ]
+    - userid: hogwards_tester2
+      name: 水户洋平
+      alias: tester2
+      mobile: +86 18912340002
+      department: [ 3 ]
+    - userid: hogwards_tester3
+      name: 流川枫
+      alias: tester3
+      mobile: +86 18912340003
+      department: [ 3 ]
+    - userid: hogwards_tester4
+      name: 樱木花道
+      alias: tester4
+      mobile: +86 18912340004
+      department: [ 3 ]
+    - userid: hogwards_tester5
+      name: 赤木刚宪
+      alias: tester5
+      mobile: +86 18912340005
+      department: [ 3 ]
+    - userid: hogwards_tester6
+      name: 木暮公延
+      alias: tester6
+      mobile: +86 18912340006
+      department: [ 3 ]
+    - userid: hogwards_tester7
+      name: 三井寿
+      alias: tester7
+      mobile: +86 18912340007
+      department: [ 3 ]
+    - userid: hogwards_tester8
+      name: 宫城良田
+      alias: tester8
+      mobile: +86 18912340008
+      department: [ 3 ]
+  ids:
+    - 'user1'
+    - 'user2'
+    - 'user3'
+    - 'user4'
+    - 'user5'
+    - 'user6'
+    - 'user7'
+    - 'user8'
