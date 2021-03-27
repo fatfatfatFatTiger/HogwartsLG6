@@ -12,5 +12,6 @@
   - stage6_live1_appium 为第六阶段第一次直播课作业
   - stage6_live2_frame 为第六阶段第二次直播课作业
   - stage9_live_mitmproxy 为第九阶段直播课作业
-  - stage10_record_api 为第十节段录播课作业
+  - stage10_record_api 为第十阶段录播课作业
+  - stage10_live_request 为第十阶段直播课作业
 
