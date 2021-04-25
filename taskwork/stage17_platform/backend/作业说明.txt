@@ -1,0 +1,5 @@
+完成SuiteService的功能，基本的增删改查
+拔高：增加的时候关联TestCase
+
+造一个Suite资源，允许包含多个测试用例
+
