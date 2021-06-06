@@ -1,5 +1,5 @@
 import requests
-from HogwartsLG6.taskwork.stage17_platform.backend.backend import db, Suite, Case
+from HogwartsLG6.taskwork.stage17_live_platform.backend.backend import db, Suite, Case, relationship
 
 
 def test_db_init():
@@ -31,23 +31,34 @@ def test_cases_get():
 
 
 def test_cases_post():
-    r = requests.get('http://127.0.0.1:5000/testcase')
-    size_origin = len(r.json())
+    r_case_before = requests.get('http://127.0.0.1:5000/testcase')
+    size_origin = len(r_case_before.json())
     print(f'初始用例数size_origin：{size_origin}')
-    r = requests.post(
-        'http://127.0.0.1:5000/testcase',
+
+    r_suite = requests.post(
+        'http://127.0.0.1:5000/testsuite',
         json={
-            'case_name': '按用例名查询',
-            'case_desc': '验证按用例名查询',
-            'case_steps': '步骤1.步骤2.步骤3',
-            'suite_id': 2,
-            'case_remark': '新增用例'
+            'suite_name': '测试套件_提交',
+            'suite_desc': '该测试套件的用例用于验证提交功能'
         }
     )
-    assert r.status_code == 200
+    assert r_suite.status_code == 200
 
-    r = requests.get('http://127.0.0.1:5000/testcase')
-    size_add = len(r.json())
+    r_case = requests.post(
+        'http://127.0.0.1:5000/testcase',
+        json={
+            'case_name': '提交成功',
+            'case_desc': '关联测试套件用例_方式B',
+            'case_steps': '步骤1.步骤2.步骤3',
+            'case_remark': '新增用例关联测试套件'
+        }
+    )
+    assert r_case.status_code == 200
+
+    relationship()
+
+    r_case_after = requests.get('http://127.0.0.1:5000/testcase')
+    size_add = len(r_case_after.json())
     print(f'新增用例后用例数size_add：{size_add}')
     assert size_add == size_origin + 1
 

@@ -8,14 +8,11 @@ from HogwartsLG6.taskwork.stage17_platform.backend.common.connect_to_db import D
 app = Flask(__name__)
 api = Api(app)
 
-d = DB()
-uri = d.connect_db()
+uri = DB().connect_db()
 app.config['SQLALCHEMY_DATABASE_URI'] = uri
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 app.config['JSON_AS_ASCII'] = False  # 避免显示中文乱码
 db = SQLAlchemy(app)
-
-testcases = []
 
 
 class Suite(db.Model):
@@ -31,7 +28,7 @@ class Suite(db.Model):
 			"suite_id": self.suite_id,
 			"suite_name": self.suite_name,
 			'suite_desc': self.suite_desc
-		})
+		}, ensure_ascii=False)
 
 
 class Case(db.Model):
@@ -61,6 +58,27 @@ class Case(db.Model):
 		return {c.name: getattr(self, c.name) for c in self.__table__.columns}
 
 
+class TestSuiteService(Resource):
+	def get(self):
+		testsuites = [str(item) for item in Suite.query.all()]
+		return jsonify(testsuites)
+
+	def post(self):
+		"""
+		新增测试用例，使用post来代替put和delete也是很多公司常用的做法
+		"""
+		app.logger.info(request.args)
+		if 'suite_name' not in request.args:
+			app.logger.info(request.json)
+			# testsuite = Suite(**request.json)
+			# app.logger.info(testsuite)
+			# db.session.add(testsuite)
+			# db.session.commit()
+			cst = Suite(**request.json)
+			app.logger.info(cst)
+			return repr(cst)
+
+
 class TestCaseService(Resource):
 	def get(self):
 		"""
@@ -75,21 +93,23 @@ class TestCaseService(Resource):
 		新增测试用例，使用post来代替put和delete也是很多公司常用的做法
 		"""
 		app.logger.info(request.args)
+
 		if 'case_name' not in request.args:
 			app.logger.info(request.json)
-			# 此处使用的request是flask里的类，
-			# json表示客户端发送过来的form表单json格式或各种格式，可以使用request.json把请求体作为整个json结构来进行管理
-			testcase = Case(**request.json)
-			# 把请求中的steps转换成字符串
-			testcase.steps = json.dumps(request.json.get('case_steps'))
-			app.logger.info(testcase)
-			db.session.add(testcase)
-			db.session.commit()
-			return {
-				'size': len(testcases),
-				'msg': 'ok',
-				'errcode': 0
-			}
+			# 此处使用的request是flask里的类，json表示客户端发送过来的form表单json格式或各种格式，
+			# 使用request.json把请求体作为整个json结构来进行管理
+			# testcase = Case(**request.json)
+			# # 把请求中的steps转换成字符串
+			# testcase.steps = json.dumps(request.json.get('case_steps'))
+			# app.logger.info(testcase)
+			# db.session.add(testcase)
+			# db.session.commit()
+			# return {
+			# 	'msg': 'ok',
+			# 	'errcode': 0
+			# }
+			yl = Case(**request.json)
+			return yl
 
 	def put(self):
 		"""
@@ -117,7 +137,20 @@ class TestCaseService(Resource):
 		}
 
 
+api.add_resource(TestSuiteService, '/testsuite')
 api.add_resource(TestCaseService, '/testcase')
+
+
+def relationship():
+	tss = TestSuiteService()
+	tcs = TestCaseService()
+	cst = tss.post()
+	yl = tcs.post()
+	cst.case.append(yl)
+
+	db.session.add(cst)
+	db.session.commit()
+
 
 # 直接启动
 if __name__ == '__main__':

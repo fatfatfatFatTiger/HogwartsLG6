@@ -7,10 +7,11 @@ class DB:
     def get_config(self):
         cur_file_path = os.path.realpath(__file__)  # 获取当前脚本的真实路径（右斜杠）
         cur_dir_path = os.path.dirname(cur_file_path)
-
-        cfg_dir_path = os.path.join(cur_dir_path, 'config')
+        father_dir_path = os.path.dirname(cur_dir_path)
+        # print(father_dir_path)
+        cfg_dir_path = os.path.join(father_dir_path, 'config')
         cfg_file_path = os.path.join(cfg_dir_path, 'config.ini')
-
+        # print(cfg_file_path)
         conf = configparser.ConfigParser()
         conf.read(cfg_file_path)
         return conf
