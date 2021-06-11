@@ -17,5 +17,6 @@
   - stage10_live_request 为第十阶段直播课作业
   - stage13_record_docker 为第十三阶段录播课作业
   - stage13_live_dockerfile 为第十三阶段直播课作业
+  - stage14_live_jenkins 为第十四阶段直播课作业
   - stage17_live_platform/backend 为第十七阶段后端直播课作业
 
