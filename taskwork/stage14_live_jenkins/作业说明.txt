@@ -1,0 +1,5 @@
+
+1.在自己搭建的 Jenkins 上实现 Python + Jenkins 的接口自动化测试持续集成，将最终测试结果报告用 allure-report 进行展示
+2.在自己搭建的 Jenkins 上实现 App 源码打包、发布、自动化测试的持续集成体系建设，任务结果用 email 的形式进行通知
+
+
